@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+
+<style>
+    body {
+         font-family:'Courier New', Courier, monospace;
+         text-align: center;
+}
+/* styles canvas */
+#board {
+    background-color: lightgray;
+    border-bottom: 1px solid black;
+}
+</style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport", content="width=device-width, initial-scale=1.0">
+    <title>Chrome Dinosaur Game</title>
+</head>
+<body>
+    <h1>Chrome Dinosaur Game</h1>
+    <canvas id="board"></canvas> <!-- canvas element allows us to use JavaScript to animate -->
+</body>
+
+
+<script>
+    //Create variables for the board and its stylistic elements
+       //also for the width & height of the board
+
+
+    //Create variables for the Dino's width & height
+       //also for the Dino's x and y position and Dino image
+
+
+    //Create dino object
+         //which includes variables created above into properties
+
+
+    // Create variables for the cactus
+        //which includes the array, 3 diff. width types, height, x & y position, and cactus diff. images types
+
+
+    //Create variables that addresses the physics of the game
+         //which includes the x & y position's velocity, gravity, and for the game's status
+
+
+    window.onload = function(){
+        //Set board's height and width, create the board, and context
+
+
+        //Load the image and find images from files
+        //Create function that creates and displays dinoImg using dino object
+
+
+        //define 3 images
+
+
+        requestAnimationFrame(update); //updates dino every frame
+        setInterval(placeCactus, 1000); //1000 milliseconds = 1 second
+
+
+        // Add an event listener that listens for the player pressing an arrow key.
+
+
+    }
+    //function to update game based on dino's actions
+    function update(){
+        requestAnimationFrame(update);
+
+
+       //Checks for the game to be over, and ends the function
+       //Set the board rectangle to be transparent black
+
+
+       //Address the Dinosaur's velocity/gravity and display the dino
+           //add gravity to velocityY
+       //Create a loop that ran through the whole cactusArray
+           //include if statement for when the dino collides & ending the game
+       //Update & create the scores
+     }
+     //Create function for the dinosaurs movements when certain buttons are pressed
+     function moveDino(e){
+
+
+
+
+    }
+
+
+    //Create function that will keep generating cacti on the board
+    function placeCactus(){
+        //create if statement to check whether the game is over or not & return if it is over
+
+
+        //Create variable cactus to display cactus on the board
+
+
+        //Create variable that will randomly select which cactus to use
+
+
+        //Create if/else statements for when to display each cacti images
+
+
+        //Create new if statement to remove first element from the array
+
+
+    }
+
+
+    //Create function to detect collision between dino & cactus
+    function detectCollision (a,b){
+
+
+    }
+    </script>
+</html>
