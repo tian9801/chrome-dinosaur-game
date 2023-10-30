@@ -131,7 +131,7 @@ function update() {
     //create a parameter for the for loop,
     //the parameter should run through the whole cactusArray
 
-    for () {
+    for (/*create conditions here that will run through the entire cactusArray*/) {
         //set cactus equal to the i index of cactusArray
         cactus.x += velocityX; //this gives the cactus a velocity as well to appear like it's moving
         context.drawImage(cactus.img, cactus.x, cactus.y, cactus.width, cactus.height);
@@ -184,9 +184,7 @@ function moveDino(e) {
 
 
 function placeCactus() {
-    if (gameOver) {
-        return;
-    }
+    //write an if statement to check and return if the game is over
 
     //place cactus
     let cactus = {
@@ -197,22 +195,22 @@ function placeCactus() {
         height: cactusHeight
     }
 
-    let placeCactusChance = Math.random(); //0 - 0.9999...
+    let placeCactusChance = Math.random(); //this generates a random number from 0 - 0.9999... to determine which cactus is thrown at the dinosaur
 
-    if (placeCactusChance > .90) { //10% you get cactus3
-        cactus.img = cactus3Img;
-        cactus.width = cactus3Width;
-        cactusArray.push(cactus);
+    if (placeCactusChance > 0.90) { //10% you get cactus3, since we're declaring that only the values greater than 0.9 out of 0-1 will give us the third cactus
+        //set the cactus variable equal to cactus3Img to display the third cactus
+        //set the widths equal
+        //push cactus into the cactusArray
     }
     else if (placeCactusChance > .70) { //30% you get cactus2
-        cactus.img = cactus2Img;
-        cactus.width = cactus2Width;
-        cactusArray.push(cactus);
+        //set the cactus variable equal to cactus2Img to display the second cactus
+        //set the widths equal
+        //push cactus into the cactusArray
     }
     else if (placeCactusChance > .50) { //50% you get cactus1
-        cactus.img = cactus1Img;
-        cactus.width = cactus1Width;
-        cactusArray.push(cactus);
+        //set the cactus variable equal to cactus1Img to display the first cactus
+        //set the widths equal
+        //push cactus into the cactusArray
     }
 
     if (cactusArray.length > 5) {
